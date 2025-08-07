@@ -16,6 +16,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Typography } from '../../components/Typography';
 import { CategoryCard } from '../../components/CategoryCard';
 import { ArticleCard } from '../../components/ArticleCard';
+import {
+  Category as CategoryModel,
+} from '../../store/slices/categoriesSlice';
+import {
+  Article as ArticleModel,
+} from '../../store/slices/articlesSlice';
 import { colors } from '../../theme/colors';
 import { spacing, borderRadius } from '../../theme/spacing';
 import { figma } from '../../utils/px';
@@ -50,28 +56,46 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
     if (articles.length === 0) dispatch(fetchArticles());
   }, [dispatch, categories.length, articles.length]);
 
-  const handlePremiumBannerPress = () => {
-    navigation.getParent()?.navigate('Paywall');
-  };
-  const handleCategoryPress = (c) => navigation.navigate('Category', {
-    id: c.id, slug: c.name, title: c.title,
-  });
+  const rootNav = navigation.getParent<
+    import('@react-navigation/native').NavigationProp<
+      import('../../navigation/types').RootStackParamList
+    >
+  >();
 
-  const handleArticlePress = (a) => navigation.navigate('ArticleWeb', {
-    url: a.uri, title: a.title,
-  });
-  const renderArticleItem = ({ item }: { item: any }) => (
+  const handlePremiumBannerPress = () => {
+    rootNav?.navigate('Paywall');
+  };
+
+  type NavCategory = Pick<CategoryModel, 'id'  |'name'| 'title'>;
+  type NavArticle  = Pick<ArticleModel,  'uri' | 'title'>;
+
+  const handleCategoryPress = (c: NavCategory) => {
+    rootNav?.navigate('Category', {
+      id: c.id,
+      slug: c.name,
+      title: c.title,
+    });
+  };
+
+  const handleArticlePress = (a: NavArticle) => {
+    rootNav?.navigate('ArticleWeb', {
+      url: a.uri,
+      title: a.title,
+    });
+  };
+
+  const renderArticleItem = ({ item }: { item: ArticleModel }) => (
     <ArticleCard
       article={item}
-      onPress={(article) => console.log('Article pressed:', article.title)}
+      onPress={handleArticlePress}
       style={styles.articleCard}
     />
   );
 
-  const renderCategoryItem = ({ item, index }: { item: any; index: number }) => (
+  const renderCategoryItem = ({ item, index }: { item: CategoryModel; index: number }) => (
     <CategoryCard
       category={item}
-      onPress={(category) => console.log('Category pressed:', category.title)}
+    onPress={handleCategoryPress}
       style={[styles.categoryCard, index % 2 === 1 && styles.categoryCardRight]}
     />
   );
@@ -211,7 +235,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
 
             {categories.length > 0 && (
               <View style={styles.categoriesSection}>
-                <FlatList
+                <FlatList<CategoryModel>
                   data={categories}
                   renderItem={renderCategoryItem}
                   keyExtractor={(item) => item.id.toString()}
@@ -243,7 +267,7 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    marginTop: 50,
+    marginTop: 20,
     height: 53,
     paddingHorizontal: figma.spacing(spacing.xl),
     justifyContent: 'center',
@@ -295,6 +319,7 @@ const styles = StyleSheet.create({
     color: 'rgba(175, 175, 175, 1)',
   },
 premiumBanner: {
+  marginTop: 16,
   height: 64,
   width: 377,
   alignSelf: 'center',
@@ -320,18 +345,21 @@ bannerIconContainer: {
 },
 
 bannerIcon: {
-  width: 32,
-  height: 32,
+  width: 52,
+  height: 52,
   tintColor: 'rgba(208,176,112,1)', // #D0B070
+  marginLeft: 17,
+  marginTop:8,
 },
 
 notificationBadge: {
+
   position: 'absolute',
-  right: -4,
-  top: -4,
-  width: 23,
-  height: 23,
-  borderRadius: 12,
+  right: -15,
+  top: -2,
+  width: 18,
+  height: 18,
+  borderRadius: 9,
   backgroundColor: 'rgba(232,44,19,0.9)',
   justifyContent: 'center',
   alignItems: 'center',
@@ -344,8 +372,10 @@ notificationBadge: {
 
 badgeText: {
   color: '#FFFFFF',
-  fontSize: 10,
+  fontSize: 11,
   fontWeight: '600',
+lineHeight: 18,
+textAlign: 'center'
 },
 
 bannerTextBlock: {

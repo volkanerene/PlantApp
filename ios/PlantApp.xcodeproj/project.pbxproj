@@ -9,33 +9,33 @@
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		18DF315DE4CEE7132D8D207F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		2935846F79A14AE1A30DB9FE /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6125B40B8AC348DCA5BC2C27 /* Rubik-Medium.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		CB2270F62E43BB5600F7A1D7 /* VisbyBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB2270F42E43BB5600F7A1D7 /* VisbyBold.otf */; };
-		CB2270F72E43BB5600F7A1D7 /* VisbyLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB2270F52E43BB5600F7A1D7 /* VisbyLight.otf */; };
-		CB3AF74C2E4271A800A49E5A /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB3AF74B2E4271A800A49E5A /* SFProText-Bold.ttf */; };
-		CB3AF74D2E4271A800A49E5A /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB3AF7492E4271A800A49E5A /* Rubik-Regular.ttf */; };
-		CB3AF74E2E4271A800A49E5A /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB3AF74A2E4271A800A49E5A /* Rubik-SemiBold.ttf */; };
-		CB3AF7502E4379ED00A49E5A /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB3AF74F2E4379ED00A49E5A /* Rubik-ExtraBold.ttf */; };
-		CB3AF7522E4379F400A49E5A /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB3AF7512E4379F400A49E5A /* Rubik-Medium.ttf */; };
-		FC067E9C9D2CABAB4AA9BCE0 /* libPods-PlantApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB06FE3CD60B1CF861AA4CC /* libPods-PlantApp.a */; };
-		D4FA51F283F8495CB2FB8DF8 /* VisbyBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E242668715A4CE480C78B5F /* VisbyBold.otf */; };
-		EE9D2C72342C42E59CA48A5A /* VisbyLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99484657327F45F2A4A3F603 /* VisbyLight.otf */; };
-		E1023C88AFA04F60990F6841 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93F03997F6EB444DB9F5A9CB /* Rubik-ExtraBold.ttf */; };
-		2935846F79A14AE1A30DB9FE /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6125B40B8AC348DCA5BC2C27 /* Rubik-Medium.ttf */; };
 		A6DEF7D3D63D43E098B2452A /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39898775C4CC4773982AF1EB /* Rubik-Regular.ttf */; };
-		E36421FADF7C4AEBA8248C6B /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C3CE0273BD34B58A8369B11 /* Rubik-SemiBold.ttf */; };
+		D4FA51F283F8495CB2FB8DF8 /* VisbyBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E242668715A4CE480C78B5F /* VisbyBold.otf */; };
 		D7E8552AD88C417C84B82B03 /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E8E2223FD584A1DBB0995F3 /* SFProText-Bold.ttf */; };
+		E1023C88AFA04F60990F6841 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93F03997F6EB444DB9F5A9CB /* Rubik-ExtraBold.ttf */; };
+		E36421FADF7C4AEBA8248C6B /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C3CE0273BD34B58A8369B11 /* Rubik-SemiBold.ttf */; };
+		EE9D2C72342C42E59CA48A5A /* VisbyLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99484657327F45F2A4A3F603 /* VisbyLight.otf */; };
+		FC067E9C9D2CABAB4AA9BCE0 /* libPods-PlantApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB06FE3CD60B1CF861AA4CC /* libPods-PlantApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E8E2223FD584A1DBB0995F3 /* SFProText-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Bold.ttf"; path = "../assets/fonts/SFProText-Bold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* PlantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PlantApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PlantApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = PlantApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		1BB06FE3CD60B1CF861AA4CC /* libPods-PlantApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlantApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3CE0273BD34B58A8369B11 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-SemiBold.ttf"; path = "../assets/fonts/Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		39898775C4CC4773982AF1EB /* Rubik-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.ttf"; path = "../assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		6125B40B8AC348DCA5BC2C27 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PlantApp/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PlantApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E242668715A4CE480C78B5F /* VisbyBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = VisbyBold.otf; path = ../assets/fonts/VisbyBold.otf; sourceTree = "<group>"; };
+		93F03997F6EB444DB9F5A9CB /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-ExtraBold.ttf"; path = "../assets/fonts/Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
+		99484657327F45F2A4A3F603 /* VisbyLight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = VisbyLight.otf; path = ../assets/fonts/VisbyLight.otf; sourceTree = "<group>"; };
 		CB2270F42E43BB5600F7A1D7 /* VisbyBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = VisbyBold.otf; sourceTree = "<group>"; };
 		CB2270F52E43BB5600F7A1D7 /* VisbyLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = VisbyLight.otf; sourceTree = "<group>"; };
 		CB3AF7492E4271A800A49E5A /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
@@ -46,13 +46,6 @@
 		D1A90CFACF90A7DA1A6E8ACB /* Pods-PlantApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.debug.xcconfig"; path = "Target Support Files/Pods-PlantApp/Pods-PlantApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D5160BB61E17308681F7F649 /* Pods-PlantApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.release.xcconfig"; path = "Target Support Files/Pods-PlantApp/Pods-PlantApp.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		8E242668715A4CE480C78B5F /* VisbyBold.otf */ = {isa = PBXFileReference; name = "VisbyBold.otf"; path = "../assets/fonts/VisbyBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		99484657327F45F2A4A3F603 /* VisbyLight.otf */ = {isa = PBXFileReference; name = "VisbyLight.otf"; path = "../assets/fonts/VisbyLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		93F03997F6EB444DB9F5A9CB /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Rubik-ExtraBold.ttf"; path = "../assets/fonts/Rubik-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6125B40B8AC348DCA5BC2C27 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; name = "Rubik-Medium.ttf"; path = "../assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		39898775C4CC4773982AF1EB /* Rubik-Regular.ttf */ = {isa = PBXFileReference; name = "Rubik-Regular.ttf"; path = "../assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1C3CE0273BD34B58A8369B11 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; name = "Rubik-SemiBold.ttf"; path = "../assets/fonts/Rubik-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0E8E2223FD584A1DBB0995F3 /* SFProText-Bold.ttf */ = {isa = PBXFileReference; name = "SFProText-Bold.ttf"; path = "../assets/fonts/SFProText-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +70,20 @@
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 			);
 			name = PlantApp;
+			sourceTree = "<group>";
+		};
+		25BF1D1D9F1E446B808F94C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E242668715A4CE480C78B5F /* VisbyBold.otf */,
+				99484657327F45F2A4A3F603 /* VisbyLight.otf */,
+				93F03997F6EB444DB9F5A9CB /* Rubik-ExtraBold.ttf */,
+				6125B40B8AC348DCA5BC2C27 /* Rubik-Medium.ttf */,
+				39898775C4CC4773982AF1EB /* Rubik-Regular.ttf */,
+				1C3CE0273BD34B58A8369B11 /* Rubik-SemiBold.ttf */,
+				0E8E2223FD584A1DBB0995F3 /* SFProText-Bold.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -133,21 +140,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		25BF1D1D9F1E446B808F94C6 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				8E242668715A4CE480C78B5F /* VisbyBold.otf */,
-				99484657327F45F2A4A3F603 /* VisbyLight.otf */,
-				93F03997F6EB444DB9F5A9CB /* Rubik-ExtraBold.ttf */,
-				6125B40B8AC348DCA5BC2C27 /* Rubik-Medium.ttf */,
-				39898775C4CC4773982AF1EB /* Rubik-Regular.ttf */,
-				1C3CE0273BD34B58A8369B11 /* Rubik-SemiBold.ttf */,
-				0E8E2223FD584A1DBB0995F3 /* SFProText-Bold.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -210,15 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				CB3AF74C2E4271A800A49E5A /* SFProText-Bold.ttf in Resources */,
-				CB3AF74D2E4271A800A49E5A /* Rubik-Regular.ttf in Resources */,
-				CB3AF74E2E4271A800A49E5A /* Rubik-SemiBold.ttf in Resources */,
-				CB2270F62E43BB5600F7A1D7 /* VisbyBold.otf in Resources */,
-				CB2270F72E43BB5600F7A1D7 /* VisbyLight.otf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				CB3AF7502E4379ED00A49E5A /* Rubik-ExtraBold.ttf in Resources */,
 				18DF315DE4CEE7132D8D207F /* PrivacyInfo.xcprivacy in Resources */,
-				CB3AF7522E4379F400A49E5A /* Rubik-Medium.ttf in Resources */,
 				D4FA51F283F8495CB2FB8DF8 /* VisbyBold.otf in Resources */,
 				EE9D2C72342C42E59CA48A5A /* VisbyLight.otf in Resources */,
 				E1023C88AFA04F60990F6841 /* Rubik-ExtraBold.ttf in Resources */,
@@ -278,13 +263,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PlantApp/Pods-PlantApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PlantApp/Pods-PlantApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -299,13 +280,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PlantApp/Pods-PlantApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PlantApp/Pods-PlantApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -451,7 +428,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -520,7 +500,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

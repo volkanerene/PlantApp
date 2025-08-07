@@ -74,7 +74,7 @@ const RADIUS = 16;
 const styles = StyleSheet.create({
   container: {
     width: 240,
-    height: 164,
+    height: 194,
     marginRight: 12,
     borderRadius: RADIUS,
     overflow: 'hidden',

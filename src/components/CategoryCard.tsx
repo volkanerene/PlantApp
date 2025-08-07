@@ -28,6 +28,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({
   const handlePress = () => {
     onPress?.(category);
   };
+const ratio = category.image?.width / category.image?.height || 1;
 
   return (
     <TouchableOpacity
@@ -46,14 +47,10 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({
         
         <View style={styles.solidBackground} />
         
-        <ImageBackground
-          source={{ uri: category.image?.url }}
-          style={styles.imageBackground}
-          imageStyle={styles.image}
-          resizeMode="cover"
-        >
-
-        </ImageBackground>
+<ImageBackground
+  source={{uri: category.image?.url}}
+  style={[{ aspectRatio: ratio }]}
+/>
       </View>
     </TouchableOpacity>
   );
@@ -62,7 +59,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({
 const styles = StyleSheet.create({
   container: {
     width: 158,
-    height: 152,
+    height: 182,
     borderRadius: figma.borderRadius(borderRadius.lg),
     overflow: 'hidden',
     marginBottom: 8,
@@ -93,7 +90,7 @@ imageBackground: {
   position: 'absolute',
   top: 0,
   right: 0,
-  width: 116,
+
   height: '100%',
 },
 

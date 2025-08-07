@@ -204,7 +204,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: 1,
-    marginBottom: Platform.OS === 'android' ? -75 : -88,
+    marginBottom: Platform.OS === 'android' ? -75 : -158,
   },
   
   phoneImage: {
