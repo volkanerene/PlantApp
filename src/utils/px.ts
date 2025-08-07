@@ -35,10 +35,7 @@ export const normalizeFont = (size: number): number => {
 };
 
 export const getScreenDimensions = () => ({
-  width: SCREEN_WIDTH,
   height: SCREEN_HEIGHT,
-  isSmallScreen: SCREEN_WIDTH < 375,
-  isTablet: SCREEN_WIDTH >= 768,
 });
 
 

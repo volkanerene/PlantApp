@@ -1,13 +1,11 @@
 // src/theme/colors.ts
 export const colors = {
-  // Primary colors
+  // Primary color
   primary: '#28AF6E',
-  primaryDark: '#28A745',
   
   // Background colors
   background: '#FFFFFF',
   backgroundSecondary: '#F8F9FA',
-  backgroundDark: '#0B0B0B',
   
   // Card colors
   card: '#FFFFFF',
@@ -17,7 +15,6 @@ export const colors = {
   // Text colors
   textPrimary: '#13231B', // Ana text rengi
   textSecondary: 'rgba(19, 35, 27, 0.7)', // textPrimary'nin 0.7 opacity hali
-  textTertiary: 'rgba(19, 35, 27, 0.5)', // textPrimary'nin 0.5 opacity hali
   textLight: '#FFFFFF', // Button text color
   
   // Status colors

@@ -78,19 +78,9 @@ export const PaywallScreen: React.FC<PaywallScreenProps> = ({ navigation }) => {
 
 const handleClose = () => {
   dispatch(setHasCompletedOnboarding(true));
-
-
-  const rootNav =
-    navigation.getParent()?.getParent()   // RootStack
-    ?? navigation.getParent()             // fallback
-    ?? navigation;                        // ekstra garanti
-
-  rootNav.dispatch(
-    CommonActions.reset({
-      index: 0,
-      routes: [{ name: 'MainTabs' }],
-    }),
-  );
+  if (navigation.canGoBack()) {
+    navigation.goBack(); // Eğer main app'ten gelindiyse
+  }
 };
 
   const handleTryFree = () => {
@@ -336,7 +326,7 @@ const styles = StyleSheet.create({
   
 header: {
   position: 'absolute',
-  top: 280,
+  top: Platform.OS === 'android' ? 378 : 280, // android'de biraz daha aşağı
   left: figma.spacing(spacing.xl),
   right: figma.spacing(spacing.xl),
   overflow: 'visible',
@@ -372,7 +362,7 @@ header: {
   
 featuresSection: {
   position: 'absolute',
-  top: 362,
+  top: Platform.OS === 'android' ? 470 : 362, // android'de biraz daha aşağı
   left: 0,
   right: 0,
 },

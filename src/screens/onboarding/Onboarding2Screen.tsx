@@ -14,7 +14,6 @@ import { Typography } from '../../components/Typography';
 import { Button } from '../../components/Button';
 import { colors } from '../../theme/colors';
 import { spacing } from '../../theme/spacing';
-import { shadows } from '../../theme/shadows';
 import { figma, getScreenDimensions } from '../../utils/px';
 import { Onboarding2ScreenProps } from '../../navigation/types';
 import { getFontSize, getLineHeight, getPlatformShadow } from '../../utils/platformStyles';
@@ -134,10 +133,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: figma.spacing(spacing.xl),
   },
   
-  headerSection: {
-    paddingTop: Platform.OS === 'android' ? 55 : 40,
-    marginBottom: figma.spacing(spacing.xl),
-  },
+headerSection: {
+  paddingTop: Platform.OS === 'android' ? 40 : 40,
+  marginBottom: figma.spacing(spacing.xl),
+},
 
   titleWrap: {
     position: 'relative',
@@ -207,27 +206,27 @@ const styles = StyleSheet.create({
     marginBottom: Platform.OS === 'android' ? -75 : -158,
   },
   
-  phoneImage: {
-    width: Platform.OS === 'android' ? screenWidth * 0.68 : screenWidth * 0.72,
-    height: Platform.OS === 'android' ? 
-      (screenWidth * 0.68) * 1.8 : 
-      (screenWidth * 0.72) * 1.8,
-    maxWidth: Platform.OS === 'android' ? 320 : 340,
-    maxHeight: Platform.OS === 'android' ? 580 : 620,
-    transform: [{ translateY: Platform.OS === 'android' ? 5 : 8 }],
-  },
+phoneImage: {
+  width: Platform.OS === 'android' ? screenWidth * 0.72 : screenWidth * 0.72,
+  height: Platform.OS === 'android' ? 
+    (screenWidth * 0.72) * 1.95 : 
+    (screenWidth * 0.72) * 1.8,
+  maxWidth: Platform.OS === 'android' ? 340 : 340,
+  maxHeight: Platform.OS === 'android' ? 640 : 620,
+  transform: [{ translateY: Platform.OS === 'android' ? 20 : 8 }],
+},
   
-  purpleCircleContainer: {
-    position: 'absolute',
-    top: Platform.OS === 'android' ? '-12%' : '-15%',
-    right: Platform.OS === 'android' ? '-3%' : '-5%',
-    zIndex: 2,
-  },
+purpleCircleContainer: {
+  position: 'absolute',
+  top: Platform.OS === 'android' ? '-8%' : '-15%',
+  right: Platform.OS === 'android' ? '-5%' : '-5%',
+  zIndex: 2,
+},
   
-  purpleCircleImage: {
-    width: Platform.OS === 'android' ? 380 : 420,
-    height: Platform.OS === 'android' ? 380 : 420,
-  },
+purpleCircleImage: {
+  width: Platform.OS === 'android' ? 440 : 420,
+  height: Platform.OS === 'android' ? 440 : 420,
+},
   
   orangeCircleContainer: {
     position: 'absolute',

@@ -11,6 +11,7 @@ import {
   ActivityIndicator,
   Image,
   ImageBackground,
+  Platform,
 } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { Typography } from '../../components/Typography';
@@ -25,12 +26,13 @@ import {
 import { colors } from '../../theme/colors';
 import { spacing, borderRadius } from '../../theme/spacing';
 import { figma } from '../../utils/px';
-import { HomeScreenProps } from '../../navigation/types';
+import { HomeScreenProps, RootStackParamList } from '../../navigation/types';
 import { RootState, AppDispatch } from '../../store';
 import { fetchCategories } from '../../store/slices/categoriesSlice';
 import { fetchArticles } from '../../store/slices/articlesSlice';
 import { updateGreeting } from '../../store/slices/appSlice';
 import { GradientText } from '../../components/GradientText';
+import { NavigationProp, useNavigation } from '@react-navigation/native';
 
 // icons & bg
 const mailIcon = require('../../../assets/images/mailicon.png');
@@ -38,6 +40,7 @@ const searchIcon = require('../../../assets/images/searchicon.png');
 const PAYWALL_BG_IMAGE = require('../../../assets/images/mask.png');
 
 export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
+  const rootNavigation = useNavigation<NavigationProp<RootStackParamList>>();
   const dispatch = useDispatch<AppDispatch>();
   const { currentGreeting } = useSelector((state: RootState) => state.app);
   const categories = useSelector((s: RootState) => s.categories?.data ?? []);
@@ -56,31 +59,24 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
     if (articles.length === 0) dispatch(fetchArticles());
   }, [dispatch, categories.length, articles.length]);
 
-  const rootNav = navigation.getParent<
-    import('@react-navigation/native').NavigationProp<
-      import('../../navigation/types').RootStackParamList
-    >
-  >();
+
 
   const handlePremiumBannerPress = () => {
-    rootNav?.navigate('Paywall');
+    rootNavigation.navigate('Paywall');
   };
 
-  type NavCategory = Pick<CategoryModel, 'id'  |'name'| 'title'>;
-  type NavArticle  = Pick<ArticleModel,  'uri' | 'title'>;
-
-  const handleCategoryPress = (c: NavCategory) => {
-    rootNav?.navigate('Category', {
-      id: c.id,
-      slug: c.name,
-      title: c.title,
+  const handleCategoryPress = (category: CategoryModel) => {
+    rootNavigation.navigate('Category', {
+      id: category.id,
+      slug: category.name,
+      title: category.title,
     });
   };
 
-  const handleArticlePress = (a: NavArticle) => {
-    rootNav?.navigate('ArticleWeb', {
-      url: a.uri,
-      title: a.title,
+  const handleArticlePress = (article: ArticleModel) => {
+    rootNavigation.navigate('ArticleWeb', {
+      url: article.uri,
+      title: article.title,
     });
   };
 
@@ -267,7 +263,7 @@ const styles = StyleSheet.create({
   },
 
   header: {
-    marginTop: 20,
+    marginTop: Platform.OS === 'android' ? 58 : 20,
     height: 53,
     paddingHorizontal: figma.spacing(spacing.xl),
     justifyContent: 'center',
