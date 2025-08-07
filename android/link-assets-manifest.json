@@ -22,6 +22,14 @@
       "sha1": "632e6cea171b276e5dd1f13b152c702fbf562cee"
     },
     {
+      "path": "assets/fonts/SFProText-Regular.ttf",
+      "sha1": "b4893462f2289df6978f9462a63db9e64bcc9342"
+    },
+    {
+      "path": "assets/fonts/SFProText-Semibold.ttf",
+      "sha1": "9560ae412d73c7c9af72333db50464b4e597b0f9"
+    },
+    {
       "path": "assets/fonts/VisbyBold.otf",
       "sha1": "04ec39a46ffacc7a717f89eb32dfc13c1bd6bf02"
     },

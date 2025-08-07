@@ -174,7 +174,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
 <View style={styles.bannerTextBlock}>
   <GradientText
                 style={{
-                  fontFamily: 'SF Pro Text',
+                  fontFamily: 'SFProText-Bold',
                   fontSize: 16,
                   lineHeight: 21,
                   marginBottom: 2,
@@ -381,7 +381,7 @@ bannerTextBlock: {
 },
 
 bannerTitle: {
-  fontFamily: 'SF Pro Text',
+  fontFamily: 'SFProText-Bold',
   fontSize: 16,
   lineHeight: 21,
   color: 'rgba(208,176,112,0.8)',
@@ -392,7 +392,7 @@ bannerTitle: {
 },
 
 bannerSubtitle: {
-  fontFamily: 'SF Pro Text',
+  fontFamily: 'SFProText-Bold',
   fontSize: 13,
   lineHeight: 16,
   textShadowColor: 'rgba(0,0,0,0.32)',

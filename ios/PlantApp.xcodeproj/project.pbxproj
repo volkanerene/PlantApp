@@ -19,6 +19,8 @@
 		E36421FADF7C4AEBA8248C6B /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C3CE0273BD34B58A8369B11 /* Rubik-SemiBold.ttf */; };
 		EE9D2C72342C42E59CA48A5A /* VisbyLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99484657327F45F2A4A3F603 /* VisbyLight.otf */; };
 		FC067E9C9D2CABAB4AA9BCE0 /* libPods-PlantApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB06FE3CD60B1CF861AA4CC /* libPods-PlantApp.a */; };
+		3244F140CBFA4B05B5063C33 /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E9B1BC939A24708B2D0091F /* SFProText-Regular.ttf */; };
+		FC614F38BC924673B76C4BC8 /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 099AC38EA7904A41A9DBAA0B /* SFProText-Semibold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		D1A90CFACF90A7DA1A6E8ACB /* Pods-PlantApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.debug.xcconfig"; path = "Target Support Files/Pods-PlantApp/Pods-PlantApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D5160BB61E17308681F7F649 /* Pods-PlantApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlantApp.release.xcconfig"; path = "Target Support Files/Pods-PlantApp/Pods-PlantApp.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		9E9B1BC939A24708B2D0091F /* SFProText-Regular.ttf */ = {isa = PBXFileReference; name = "SFProText-Regular.ttf"; path = "../assets/fonts/SFProText-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		099AC38EA7904A41A9DBAA0B /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; name = "SFProText-Semibold.ttf"; path = "../assets/fonts/SFProText-Semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				39898775C4CC4773982AF1EB /* Rubik-Regular.ttf */,
 				1C3CE0273BD34B58A8369B11 /* Rubik-SemiBold.ttf */,
 				0E8E2223FD584A1DBB0995F3 /* SFProText-Bold.ttf */,
+				9E9B1BC939A24708B2D0091F /* SFProText-Regular.ttf */,
+				099AC38EA7904A41A9DBAA0B /* SFProText-Semibold.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -211,6 +217,8 @@
 				A6DEF7D3D63D43E098B2452A /* Rubik-Regular.ttf in Resources */,
 				E36421FADF7C4AEBA8248C6B /* Rubik-SemiBold.ttf in Resources */,
 				D7E8552AD88C417C84B82B03 /* SFProText-Bold.ttf in Resources */,
+				3244F140CBFA4B05B5063C33 /* SFProText-Regular.ttf in Resources */,
+				FC614F38BC924673B76C4BC8 /* SFProText-Semibold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
